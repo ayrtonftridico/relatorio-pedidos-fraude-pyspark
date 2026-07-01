@@ -1,0 +1,31 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+
+# Build / empacotamento
+build/
+dist/
+
+# Testes / cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Dados (datasets baixados e saída gerada localmente)
+data/input/*
+!data/input/.gitkeep
+data/output/*
+!data/output/.gitkeep
+
+# IDE
+.vscode/
+.idea/

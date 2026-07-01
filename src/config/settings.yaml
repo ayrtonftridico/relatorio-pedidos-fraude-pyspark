@@ -1,0 +1,20 @@
+spark:
+  app_name: "RelatorioPedidosFraudePySpark"
+  master: "local[*]"
+
+paths:
+  pedidos: "./data/input/datasets-csv-pedidos/data/pedidos/"
+  pagamentos: "./data/input/dataset-json-pagamentos/data/pagamentos/"
+  output: "./data/output/relatorio_pedidos_recusados_legitimos"
+
+file_options:
+  pedidos_csv:
+    compression: "gzip"
+    header: true
+    sep: ";"
+  pagamentos_json:
+    compression: "gzip"
+
+regras_negocio:
+  # Ano de referência dos pedidos que devem compor o relatório.
+  ano_referencia: 2025
